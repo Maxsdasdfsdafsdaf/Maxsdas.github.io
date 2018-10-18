@@ -5,9 +5,258 @@
     <title>User page</title>
 
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+<style>
+#navbar ul {
+  display: none;
+  background-color: rgb(178,34,34);
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 30px;
+  background-color: #666;
+  min-width: 470px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 150px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: rgb(139,0,0); }
+#navbar ul li:hover { background-color: rgb(139,0,0); }
+  </style>
 
+<style>
+body{ background: #c2c2c2 }
+*
+{
+  margin: 0;
+}
+.cp-text {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 30px auto 0 auto;
+  width: 580px;
+  height: 100px;
+  padding-left: 20px;
+  font-family: Arial;
+  font-weight: 400;
+  position: relative;
+}
+.cp-text:before,
+.cp-text:after {
+  content: " ";
+    display: table;
+}
+
+.cp-text:after {
+  clear: both;
+}
+.cp-text span {
+  cursor: default;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 0 0 -20px;
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+</style>
+<style>
+  body{
+margin:0;
+padding: 0;
+line-height: 1.6;
+font-size: 16px;
+}
+
+#header{
+position: relative;
+}
+
+#sm{
+float: left;
+position: absolute;
+margin-top: 16px;
+left: 176px; 
+} 
+
+#cross{
+float: right;
+margin-top: 96px;
+right: -176px;
+}
+</style>
+<style>
+  .jm-logo a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+</style>
+<style>
+  .container {
+  display: flex; /* or inline-flex */
+}
+</style>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+  @media (min-width: 500px) {
+.container-2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  padding: 9px;
+  margin: 9px;
+
+}
+
+.container-2 {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container-2 div {
+  padding: 20px;
+  border: 1px solid silver;
+}
+.box {
+  flex-basis: 10%;
+}
+</style>
+<style>
+
+</style>
+<style>
+.simple-little-table {
+  font-family:Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size:12px;
+  background: darkred;
+  margin:20px;
+  border:#ccc 1px solid;
+  border-collapse:separate;
+ 
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+}
+.simple-little-table th {
+  font-weight: bold;
+  padding: 35px 35px 35px 35px; 
+  background: firebrick;
+  text-align: center;
+}
+.simple-little-table th:first-child{
+  text-align: center;
+  padding-left:20px;
+}
+.simple-little-table tr:first-child th:first-child{
+  -moz-border-radius-topleft:3px;
+  -webkit-border-top-left-radius:3px;
+  border-top-left-radius:3px;
+}
+.simple-little-table tr:first-child th:last-child{
+  -moz-border-radius-topright:3px;
+  -webkit-border-top-right-radius:3px;
+  border-top-right-radius:3px;
+}
+.simple-little-table tr{
+  text-align: center;
+  padding-left:20px;
+}
+.simple-little-table tr td:first-child{
+  text-align: left;
+  padding-left:50px;
+  border-left: 0;
+}
+.simple-little-table tr td {
+  padding:18px;
+  background: #B22222;
+}
+
+</style>
+<style>
+      a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .5em 5em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(178,34,34);
+  transition: 0.2s;
+} 
+a.button7:hover { background: rgb(139,0,0); }
+    </style>
 </head>
 <body>
+
+<div class="jm-logo">
+    <a href="Index.html">
+    <span></span>
+    <img src="Image/logo4.png" alt="Logo" height="150" width="270" />
+    </a> 
+    </div>
+
+<ul id="navbar">
+      <li><a href="Index.html">Главная</a></li>
+
+      <li><a href="Laptops.html">Ноутбуки</a>
+        <ul class="sub-menu">
+          <li><a href="Asus's Laptops.html">Asus</a></li>
+          <li><a href="Acer's Laptops.html">Acer</a></li>
+          <li><a href="Lenovo's Laptops.html">Lenovo</a></li>
+        </ul>
+      </li>
+
+      <li><a href="phones.html">Смартфоны</a>
+        <ul class="sub-menu">
+          <li><a href="Apple.html">Apple</a></li>
+        </ul>
+      </li>
+
+      <li><a href="axes.html">Аксесуары</a>
+        <ul class="sub-menu">
+          <li><a href="nauhniki.html">Наушники</a></li>
+          <li><a href="chechol.html">Чехлы</a></li>
+          <li><a href="chechol.html">Мыши</a></li>
+        </ul>
+      </li>
+          <li><a href="login.html">Вход</a>
+        </ul>
+      </li>
+    </ul>
+    
     <div class="content">
         <div id="userPanel" class="well userPanel">
             <p>Вітаємо, <span id="userName"></span></p>

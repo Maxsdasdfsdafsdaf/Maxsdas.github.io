@@ -10,89 +10,6 @@
     } 
   </style>
 <style>
-      img {
-        border: 5px solid #7CFC00;
-      }
-      </style>
-      <style>
-      a.button7 {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  padding: .3em 3em calc(.8em + 3px);
-  border-radius: 3px;
-  background: rgb(64,199,129);
-  box-shadow: 0 -3px rgb(53,167,110) inset;
-  transition: 0.2s;
-} 
-a.button7:hover { background: rgb(53, 167, 110); }
-a.button7:active {
-  background: rgb(33,147,90);
-  box-shadow: 0 3px rgb(33,147,90) inset;
-}
-    </style>
-       <style>
-body {
-  min-width: 300px;
-  padding: 1px;
-  font-size: 15px;
-  line-height: 1.5;
-  font-family: "Arial", sans-serif;
-}
-.main-menu {
-  margin: 0;
-  padding: 09;
-  list-style: none;
-  border: 0px solid #7CFC00;
-}
-
-.main-menu > li {
-  position: relative;
-  display: inline-block;
-  margin-right: -4px;
-  background-color: #7CFC00;
-}
-
-.main-menu a {
-  display: block;
-  margin-left: -1px;
-  padding: 10px 10px;
-  color: #0088cc;
-  border-left: 1px solid #808080;
-}
-
-.main-menu a:hover {
-  background-color: #f5f5f5;
-}
-
-.main-menu .sub-menu {
-  position: absolute;
-  left: 1px;
-  display: none;
-  width: 150px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #000000;
-}
-
-.main-menu .sub-menu a {
-  margin-bottom: 1px;
-  border: 1px solid #e5e5e5;
-}
-
-.main-menu > li:hover .sub-menu {
-  display: block;
-}
-
-.main-menu .open .sub-menu {
-}
-
-.main-menu > .open > a {
-}
-
-  </style>
-<style>
 * {
   padding: 0;
   margin: 0;
@@ -108,22 +25,157 @@ body {
 }
 
 .container-2 {
-  justify-content: space-between;
-}
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .container-2 div {
   padding: 20px;
   border: 1px solid silver;
+  background-color: #ffffff
 }
 .box {
   flex-basis: 10%;
 }
 </style>
+<style>
+      a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .3em 3em calc(.5em + 3px);
+  border-radius: 3px;
+  background: rgb(178,34,34);
+} 
+a.button7:hover { background: rgb(139,0,0); }
+    </style>
+   <style>
+#navbar ul {
+  display: none;
+  background-color: rgb(178,34,34);
+  position: absolute;
+  top: 100%;
+}
+#navbar li:hover ul { display: block; }
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar {
+  height: 30px;
+  background-color: #666;
+  min-width: 470px;
+}
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#navbar li a {
+  display: block;
+  padding: 6px;
+  width: 150px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+#navbar ul li { float: none; }
+#navbar li:hover { background-color: rgb(139,0,0); }
+#navbar ul li:hover { background-color: rgb(139,0,0); }
+  </style>
+
+<style>
+body{ background: #c2c2c2 }
+*
+{
+  margin: 0;
+}
+.cp-text {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 30px auto 0 auto;
+  width: 580px;
+  height: 100px;
+  padding-left: 20px;
+  font-family: Arial;
+  font-weight: 400;
+  position: relative;
+}
+.cp-text:before,
+.cp-text:after {
+  content: " ";
+    display: table;
+}
+
+.cp-text:after {
+  clear: both;
+}
+.cp-text span {
+  cursor: default;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 0 0 -20px;
+  color: rgba(255,255,255,0.95);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+</style>
+<style>
+  body{
+margin:0;
+padding: 0;
+line-height: 1.6;
+font-size: 16px;
+}
+
+#header{
+position: relative;
+}
+
+#sm{
+float: left;
+position: absolute;
+margin-top: 16px;
+left: 176px; 
+} 
+
+#cross{
+float: right;
+margin-top: 96px;
+right: -176px;
+}
+</style>
+<style>
+  .jm-logo a {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+</style>
     </head>
   <body>
 
-  <ul class="main-menu">
+<div class="jm-logo">
+<a href="Index.html">
+<span></span>
+<img src="Image/logo4.png" alt="Logo" height="150" width="270" />
+</a> 
+</div>
+
+ <ul id="navbar">
       <li><a href="Index.html">Главная</a></li>
 
       <li><a href="Laptops.html">Ноутбуки</a>
@@ -152,38 +204,38 @@ body {
 
 <div class="container-2">
   <div class="box">
-    <h3>Sony MDR-XD150 Black fffff</h3>
+    <h3>Sony MDR-XD150 Black/White</h3>
     <p></p>
     <img src="Image/nayhniki.jpg" alt="Image Icon" width="200" height="200">
     <br><a href="Sony nauhniki.html" class="button7">Подробнее</a>
   </div>
 
   <div class="box">
-    <h3>Чохол для смартфону LAUT IP6 HXE MW</h3>
+    <h3>Sony MDR-XB550AP Red</h3>
     <p></p>
-    <img src="Image/nayhniki samsung.jpg" alt="Image Icon" width="200" height="200">
-    <br><a href="#" class="button7">Подробнее</a>
+    <img src="Image/nayhniki sony.jpg" alt="Image Icon" width="200" height="200">
+    <br><a href="nauhniki sony.html" class="button7">Подробнее</a>
   </div>
 
   <div class="box">
-    <h3>Защитный чехол для LG Spirit H422 Y70</h3>
+    <h3>Чехол 360° 3 в 1 полная защита</h3>
     <p></p>
-    <img src="Image/chechol.jpg" alt="Image Icon" width="200" height="200">
-    <br><a href="#" class="button7">Подробнее</a>
-  </div>
-
-  <div class="box">
-    <h3>Защитный чехол для LG Spirit H422 Y70</h3>
-    <p></p>
-    <img src="Image/my chechol.jpg" alt="Image Icon" width="200" height="200">
-    <br><a href="#" class="button7">Подробнее</a>
+    <img src="Image/iphone chechol_3.jpg" alt="Image Icon" width="200" height="200">
+    <br><a href="iphone chechol.html" class="button7">Подробнее</a>
   </div>
 
   <div class="box">
     <h3>Защитный чехол для LG Spirit H422 Y70</h3>
     <p></p>
     <img src="Image/my chechol.jpg" alt="Image Icon" width="200" height="200">
-    <br><a href="#" class="button7">Подробнее</a>
+    <br><a href="my chechol.html" class="button7">Подробнее</a>
+  </div>
+
+  <div class="box">
+    <h3>Чехол Luoya Soft Touch Iphone 7 Plus</h3>
+    <p></p>
+    <img src="Image/iphone 7 chechol.jpg" alt="Image Icon" width="200" height="200">
+    <br><a href="iphone 7 chechol.html" class="button7">Подробнее</a>
   </div>
 </div>
   </body>
